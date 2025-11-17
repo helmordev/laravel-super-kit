@@ -16,9 +16,11 @@
         "livewire/flux": "^2.1.1",
         "livewire/volt": "^1.7.0",
         "nesbot/carbon": "^3.10",
-        "nunomaduro/essentials": "^1.0"
+        "nunomaduro/essentials": "^1.0",
+        "spatie/laravel-permission": "^6.23"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.16",
         "fakerphp/faker": "^1.23",
         "larastan/larastan": "~3.0",
         "laravel/pail": "^1.2.2",
@@ -70,7 +72,8 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi",
             "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
-            "@php artisan migrate --graceful --ansi"
+            "@php artisan migrate --graceful --ansi",
+            "@composer run-script setup"
         ],
         "pre-package-uninstall": [
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
