@@ -34,7 +34,7 @@
 
             <flux:spacer />
 
-            <flux:navlist variant="outline">
+            {{-- <flux:navlist variant="outline">
                 <flux:navlist.item
                     icon="folder-git-2"
                     href="https://github.com/laravel/livewire-starter-kit"
@@ -50,7 +50,7 @@
                 >
                     {{ __('Documentation') }}
                 </flux:navlist.item>
-            </flux:navlist>
+            </flux:navlist> --}}
 
             <!-- Desktop User Menu -->
             <flux:dropdown class="hidden lg:block" position="bottom" align="start">
