@@ -21,5 +21,4 @@ return RectorConfig::configure()
     ->withPhpSets()
     ->withImportNames(
         removeUnusedImports: true,
-        importShortClasses: true
     );
